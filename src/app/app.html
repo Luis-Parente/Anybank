@@ -1,6 +1,6 @@
 <div class="app">
   <div class="banner-form-wrapper">
-    <app-banner-component></app-banner-component>
-    <app-form-nova-transacao-component></app-form-nova-transacao-component>
+    <app-banner-component [saldo]="saldo()"></app-banner-component>
+    <app-form-nova-transacao-component (transacaoCriada)="processarTransacao($event)" )></app-form-nova-transacao-component>
   </div>
 </div>
