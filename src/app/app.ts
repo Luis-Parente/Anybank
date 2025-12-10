@@ -2,12 +2,14 @@ import {Component, computed, signal} from '@angular/core';
 import {BannerComponent} from './componentes/banner-component/banner-component';
 import {FormNovaTransacaoComponent} from './componentes/form-nova-transacao-component/form-nova-transacao-component';
 import {TipoTransacao, Transacao} from './componentes/form-nova-transacao-component/Transacao';
+import {ExtratoComponent} from './componentes/extrato-component/extrato-component';
 
 @Component({
   selector: 'app-root',
   imports: [
     BannerComponent,
-    FormNovaTransacaoComponent
+    FormNovaTransacaoComponent,
+    ExtratoComponent
   ],
   templateUrl: './app.html',
   styleUrl: './app.css'
